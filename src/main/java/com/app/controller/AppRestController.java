@@ -24,7 +24,7 @@ public class AppRestController {
 			result.setStatus("9999");
 		}
 		
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		
 		result.setData(appBean);
 		
