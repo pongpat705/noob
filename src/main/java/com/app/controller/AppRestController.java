@@ -18,7 +18,12 @@ public class AppRestController {
 	public ResponseBean<AppBean> service1(@RequestBody AppBean appBean) {
 		
 		ResponseBean<AppBean> result = new ResponseBean<>();
-		result.setStatus("9999");
+		if("1350100204282".equals(appBean.getNatId())) {
+			result.setStatus("0000");
+		} else {
+			result.setStatus("9999");
+		}
+		
 		result.setData(appBean);
 		
 		log.info(result.toString());
