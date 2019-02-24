@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<script th:src="@{~/jquery/lib/jquery-3.3.1.min.js?xdate=(${date})}"></script>
+	<script th:src="@{~/jquery/lib/aes.js?xdate=(${date})}"></script>
+	<script th:src="@{~/jquery/lib/sha256.js?xdate=(${date})}"></script>
+	<script th:src="@{~/jquery/app/app.js?xdate=(${date})}"></script>
+
+	<button onClick="sentRequestAction();"> click me</button>
+
+</body>
+</html>
